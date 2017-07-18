@@ -1,0 +1,14 @@
+name: openldap
+summary: OpenLDAP Server
+maintainer: Stephen Downie <info@spicule.co.uk>
+description: |
+  OpenLDAP Server for LDAP authentication across enterprise applications
+tags:
+  - security
+  - identity
+subordinate: false
+series: 
+  - xenial
+requires:
+  certificates:
+    interface: tls-certificates

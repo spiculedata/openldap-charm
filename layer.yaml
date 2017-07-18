@@ -1,0 +1,2 @@
+includes: ['layer:basic', 'interface:tls-certificates', 'layer:snap', 'interface:nrpe-external-master', 'layer:metrics', 'layer:nagios']
+repo: https://github.com/spiculedata/openldap-charm.git
