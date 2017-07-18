@@ -1,21 +1,9 @@
 options:
-  string-option:
-    type: string
-    default: "Default Value"
-    description: "A short description of the configuration option"
-  boolean-option:
-    type: boolean
-    default: False
-    description: "A short description of the configuration option"
-  int-option:
-    type: int
-    default: 9001
-    description: "A short description of the configuration option"
   admin-password:
     type: string
     default: ""
     description: "override default password"
-  snap-channel:
+  channel:
     type: string
     default: "edge"
     description: "default snap channel"
