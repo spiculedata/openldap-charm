@@ -20,7 +20,7 @@ Not currenty supported. Functionality coming soon.
 
 There are generic configuration options at the bottom of the page. Just deploy the service and you are all set!
 
-## retrieving admin password
+## Retrieving admin password
 
 
 # Contact Information
