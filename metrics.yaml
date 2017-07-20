@@ -1,0 +1,5 @@
+metrics:
+  objects:
+    type: gauge
+    description: Number of objects
+    command: scripts/count_objects.py
