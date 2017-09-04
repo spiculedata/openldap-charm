@@ -4,12 +4,12 @@ jobs:
     docker:
       - image: buggtb/circleci-juju
 
-    working_directory: ~/repo
+    working_directory: /root/repo
     
     environment:
       # Customize the JVM maximum heap limit
       PUSH_TARGET: ~spiculecharms/test
-      RELEASE_CHANNEL: development
+      RELEASE_CHANNEL: edge
 
     steps:
       - checkout
