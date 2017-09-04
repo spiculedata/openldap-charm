@@ -10,8 +10,8 @@ jobs:
       # Customize the JVM maximum heap limit
       PUSH_TARGET: ~spiculecharms/test
       RELEASE_CHANNEL: edge
-      TERM=linux
-      TERMINFO=/etc/terminfo
+      TERM: linux
+      TERMINFO: /etc/terminfo
     
     steps:
       - checkout
