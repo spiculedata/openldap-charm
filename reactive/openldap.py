@@ -16,13 +16,14 @@ def install_openldap():
 @when_not('openldap.configured')
 def configure_openldap():
     hookenv.status_set('maintenance', 'Configuring openldap snap')
-    check_output(['openldap.slapd-config'])
+    hookenv.open_port('80')
+    hookenv.open_port('443')
     hookenv.status_set('maintenance', 'openldap configured')
     set_state('openldap.configured')
 
 @when('openldap.configured')
 def start_openldap():
     hookenv.status_set('maintenance', 'Starting openldap snap')
-    check_output(['openldap.slapd'])
     hookenv.status_set('active', 'openldap running')
     set_state('openldap.running')
+

@@ -1,0 +1,18 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: buggtb/circleci-juju
+
+    working_directory: ~/repo
+    
+    environment:
+      # Customize the JVM maximum heap limit
+      PUSH_TARGET: ~spiculecharms/test
+      RELEASE_CHANNEL: development
+
+    steps:
+      - checkout
+      - setup_remote_docker 
+      - run: apt -y update
+      - run: /run.sh

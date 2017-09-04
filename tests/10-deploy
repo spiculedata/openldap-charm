@@ -21,15 +21,35 @@ class TestCharm(unittest.TestCase):
         # test we can access over http
         page = requests.get('http://{}'.format(self.unit.info['public-address']))
         self.assertEqual(page.status_code, 200)
-        # Now you can use self.d.sentry[SERVICE][UNIT] to address each of the units and perform
-        # more in-depth steps. Each self.d.sentry[SERVICE][UNIT] has the following methods:
-        # - .info - An array of the information of that unit from Juju
-        # - .file(PATH) - Get the details of a file on that unit
-        # - .file_contents(PATH) - Get plain text output of PATH file from that unit
-        # - .directory(PATH) - Get details of directory
-        # - .directory_contents(PATH) - List files and folders in PATH on that unit
-        # - .relation(relation, service:rel) - Get relation data from return service
 
+    def test_add_user(self):
+
+
+    def test_remove_user(self):
+    
         
+    def test_scale_out_user(self):
+    
+    
+    def test_backup(self):
+
+
+    def test_change_port(self):
+
+
+    def test_change_password(self):
+
+
+    def test_ldaps:
+
+
+    def test_ldap_enabled:
+
+
+    def test_ldap_disabled:
+
+
+
+    
 if __name__ == '__main__':
     unittest.main()
