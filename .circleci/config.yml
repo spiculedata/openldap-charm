@@ -8,7 +8,7 @@ jobs:
     
     environment:
       # Customize the JVM maximum heap limit
-      PUSH_TARGET: ~spiculecharms/test
+      PUSH_TARGET: ~spiculecharms/openldap
       RELEASE_CHANNEL: edge
       TERM: linux
       TERMINFO: /etc/terminfo
