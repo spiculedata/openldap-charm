@@ -1,4 +1,5 @@
 from charms.reactive import when, when_not, set_state, remove_state
+from charms.reactive.helpers import data_changed
 from charms.layer import snap
 from charmhelpers.core import hookenv
 from charmhelpers.core.hookenv import config, status_set
