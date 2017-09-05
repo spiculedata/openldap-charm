@@ -21,7 +21,7 @@ def install_openldap():
 def configure_openldap():
     admin_password = password_generator()
     status_set('maintenance', 'Configuring openldap snap')
-    check_output ("snap set openldap password="+admin_password)
+    check_output(["snap", "set", "openldap", "password="+admin_password])
     write_file("/root/openldap.password", admin_password)
     status_set('maintenance', 'openldap configured')
     set_state('openldap.configured')
@@ -36,7 +36,7 @@ def start_openldap():
 def config_openldap():
     channel = config('channel')
     if data_changed('admin-password', hookenv.config('admin-password')) and hookenv.config('admin-password') != "":
-        check_output ("snap set openldap password="+admin_password)
+        check_output(["snap", "set", "openldap", "password="+admin_password])
 
 def password_generator():
     chars = string.ascii_uppercase + string.ascii_lowercase + string.digits
